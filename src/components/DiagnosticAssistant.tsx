@@ -211,14 +211,15 @@ const DiagnosticAssistant = () => {
                 />
               </div>
 
-              <div className="flex justify-end pt-4">
+              <div className="flex justify-end pt-4 border-t">
                 <Button 
                   variant="medical"
                   onClick={() => setCurrentStep(2)}
                   disabled={!symptomData.symptoms.trim()}
-                  className="px-8"
+                  className="px-8 py-3 text-base font-semibold"
+                  size="lg"
                 >
-                  Analyze Symptoms
+                  Analyze Symptoms →
                 </Button>
               </div>
             </CardContent>
